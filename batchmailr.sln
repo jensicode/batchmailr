@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "batchmailr", "batchmailr.csproj", "{1C84CE6C-A8F4-425F-827D-F01E7E47308B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C84CE6C-A8F4-425F-827D-F01E7E47308B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C84CE6C-A8F4-425F-827D-F01E7E47308B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C84CE6C-A8F4-425F-827D-F01E7E47308B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C84CE6C-A8F4-425F-827D-F01E7E47308B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F4E0AC2-E4C4-4BC3-85F6-2CBC56589C81}
+	EndGlobalSection
+EndGlobal
