@@ -2,9 +2,13 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2"
+  },
+  "scripts": {
+    "buildcontent": "rimraf wwwroot/assets && node_modules/gulp/bin/gulp.js"
   }
 }
