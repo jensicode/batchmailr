@@ -6,7 +6,8 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2"
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^4.6.0"
   },
   "scripts": {
     "buildcontent": "rimraf wwwroot/assets && node_modules/gulp/bin/gulp.js"

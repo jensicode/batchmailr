@@ -8,5 +8,7 @@
     <Folder Include="wwwroot\" />
     <Folder Include="Content\" />
     <Folder Include="Content\css\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
 </Project>
