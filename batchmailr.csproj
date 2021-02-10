@@ -12,6 +12,7 @@
     <Folder Include="Views\Shared\" />
     <Folder Include="Controllers\" />
     <Folder Include="Views\Emails\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
