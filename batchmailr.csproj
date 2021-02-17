@@ -13,6 +13,9 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Emails\" />
     <Folder Include="Models\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\AdminMenu\" />
   </ItemGroup>
 
   <ItemGroup>
