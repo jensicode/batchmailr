@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using batchmailr.Services;
 
 namespace batchmailr
 {
@@ -28,6 +29,10 @@ namespace batchmailr
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+            services.AddTransient<IEmailsService, EmailsService>();
+            services.AddTransient<ILayoutTemplatesService, LayoutTemplatesService>();
+            services.AddTransient<ITextTemplatesService, TextTemplatesService>();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
