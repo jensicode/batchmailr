@@ -17,6 +17,7 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\AdminMenu\" />
     <Folder Include="Services\" />
+    <Folder Include="Content\js\" />
   </ItemGroup>
 
   <ItemGroup>
