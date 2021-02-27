@@ -1,1 +1,13 @@
 ﻿@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+:root {
+    --menuMinHeight: 56px;
+}
+
+nav {
+    min-height: var(--menuMinHeight);
+}
+
+.container {
+    margin-top: calc(var(--menuMinHeight) * 1.28);
+}
