@@ -18,6 +18,8 @@
     <Folder Include="Views\Shared\Components\AdminMenu\" />
     <Folder Include="Services\" />
     <Folder Include="Content\js\" />
+    <Folder Include="Views\LayoutTemplates\" />
+    <Folder Include="Views\TextTemplates\" />
   </ItemGroup>
 
   <ItemGroup>
