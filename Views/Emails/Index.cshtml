@@ -1,4 +1,30 @@
 ﻿@using batchmailr.Models
 @model IEnumerable<Email>
+@{ var emails = Model; }
 
 <h1>E-mails</h1>
+
+@if (emails.Any())
+{
+    <div class="table-responsive mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Email item in emails)
+                {
+                    <tr>
+                        <td>@item.EmailSubject</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p class="mt-2">You have not created any e-mail(s)</p>
+}

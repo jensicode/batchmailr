@@ -1,4 +1,30 @@
 ﻿@using batchmailr.Models
 @model IEnumerable<LayoutTemplate>
+@{ var layoutTemplates = Model; }
 
 <h1>Layout templates</h1>
+
+@if (layoutTemplates.Any())
+{
+    <div class="table-responsive mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (LayoutTemplate item in layoutTemplates)
+                {
+                    <tr>
+                        <td>@item.LayoutTemplateName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <p class="mt-2">You have not created any layout template(s)</p>
+}
