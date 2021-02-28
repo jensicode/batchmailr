@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace batchmailr.Controllers
 {
+    [Authorize]
     public class TextTemplatesController : Controller
     {
         private ITextTemplatesService _textTemplatesService;
@@ -14,7 +15,6 @@ namespace batchmailr.Controllers
             _textTemplatesService = textTemplatesService;
         }
 
-        [Authorize]
         public IActionResult Index()
         {
             var model = _textTemplatesService.GetAllTextTemplateItems();

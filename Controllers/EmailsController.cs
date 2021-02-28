@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace batchmailr.Controllers
 {
+    [Authorize]
     public class EmailsController : Controller
     {
         private IEmailsService _emailsService;
@@ -14,7 +15,6 @@ namespace batchmailr.Controllers
             _emailsService = emailsService;
         }
 
-        [Authorize]
         public IActionResult Index()
         {
             var model = _emailsService.GetAllEmailItems();

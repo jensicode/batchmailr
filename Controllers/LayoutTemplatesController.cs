@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace batchmailr.Controllers
 {
+    [Authorize]
     public class LayoutTemplatesController : Controller
     {
         private ILayoutTemplatesService _layoutTemplatesService;
@@ -14,7 +15,6 @@ namespace batchmailr.Controllers
             _layoutTemplatesService = layoutTemplatesService;
         }
 
-        [Authorize]
         public IActionResult Index()
         {
             var model = _layoutTemplatesService.GetAllLayoutTemplateItems();
