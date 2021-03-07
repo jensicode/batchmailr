@@ -6,6 +6,8 @@
 
 @if (emails.Any())
 {
+    <p><a href="Emails/Create" class="btn btn-dark">Create e-mail</a></p>
+
     <div class="table-responsive mt-4">
         <table class="table">
             <thead>
@@ -26,5 +28,6 @@
 }
 else
 {
-    <p class="mt-2">You have not created any e-mail(s)</p>
+    <p>You have not created any e-mail(s)</p>
+    <p><a href="Emails/Create" class="btn btn-dark">Create e-mail</a></p>
 }

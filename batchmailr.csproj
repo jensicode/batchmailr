@@ -20,6 +20,7 @@
     <Folder Include="Content\js\" />
     <Folder Include="Views\LayoutTemplates\" />
     <Folder Include="Views\TextTemplates\" />
+    <Folder Include="ViewsModels\" />
   </ItemGroup>
 
   <ItemGroup>
