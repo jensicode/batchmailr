@@ -1,0 +1,14 @@
+﻿@using batchmailr.ViewModels
+@model TextTemplateViewModel
+
+<h2>@ViewData["pageTitle"]</h2>
+
+<form method="post">
+    <div class="form-group">
+        <input type="text" class="form-control" asp-for="@Model.TextTemplateName" />
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" asp-for="@Model.TextTemplateContent"></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark">Create text template</button>
+</form>
